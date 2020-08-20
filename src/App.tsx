@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 import styled from 'styled-components';
 import Nav from './components/Nav';
+import Layout from './components/Layout';
 
 const Wrapper = styled.div`
 height: 100vh;
@@ -23,8 +24,6 @@ overflow: auto;
 function App() {
   return (
     <Router>
-      <Wrapper>
-        <Main>
           <Switch>
             <Route path="/tags">
               <Tags/>
@@ -40,9 +39,6 @@ function App() {
               <NoMatch/>
             </Route>
           </Switch>
-        </Main>
-        <Nav/>
-      </Wrapper>
     </Router>
   );
 }
@@ -54,15 +50,27 @@ function NoMatch() {
 }
 
 function Statistics() {
-  return <h2>统计</h2>;
+  return (
+      <Layout>
+      <h2>统计</h2>
+      </Layout>
+  );
 }
 
 function Tags() {
-  return <h2>标签</h2>;
+  return (
+      <Layout>
+        <h2>标签</h2>
+      </Layout>
+  );
 }
 
 function Money() {
-  return <h2>记账</h2>;
+  return (
+      <Layout>
+        <h2>记账</h2>
+      </Layout>
+  );
 }
 
 export default App;

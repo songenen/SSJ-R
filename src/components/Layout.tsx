@@ -9,7 +9,7 @@ flex-direction: column;
 `;
 const Main = styled.div`
 flex-grow: 1;
-overflow: auto;
+overflow: auto; 
 `;
 
 const Layout = (props: any)=>{

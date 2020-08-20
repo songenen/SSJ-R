@@ -3,23 +3,12 @@ import {
   HashRouter as Router,
   Switch,
   Route,
-  Link,
   Redirect
 } from 'react-router-dom';
-import styled from 'styled-components';
-import Nav from './components/Nav';
-import Layout from './components/Layout';
-
-const Wrapper = styled.div`
-height: 100vh;
-display: flex;
-flex-direction: column;
-`;
-const Main = styled.div`
-flex-grow: 1;
-overflow: auto;
-`;
-
+import Money from './views/Money';
+import Statistics from './views/Statistics';
+import Tags from './views/Tags';
+import NoMatch from './views/NoMatch';
 
 function App() {
   return (
@@ -43,34 +32,5 @@ function App() {
   );
 }
 
-function NoMatch() {
-  return (
-    <div>地址不存在</div>
-  );
-}
-
-function Statistics() {
-  return (
-      <Layout>
-      <h2>统计</h2>
-      </Layout>
-  );
-}
-
-function Tags() {
-  return (
-      <Layout>
-        <h2>标签</h2>
-      </Layout>
-  );
-}
-
-function Money() {
-  return (
-      <Layout>
-        <h2>记账</h2>
-      </Layout>
-  );
-}
 
 export default App;

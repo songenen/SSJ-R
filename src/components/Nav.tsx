@@ -30,12 +30,12 @@ const Nav = () =>{
     <NavWrapper>
       <ul>
         <li>
-          <Icon name="tag" />
-          <Link to="/tags">标签</Link>
-        </li>
-        <li>
           <Icon name="money"/>
           <Link to="/money">记账</Link>
+        </li>
+        <li>
+          <Icon name="tag" />
+          <Link to="/tags">标签</Link>
         </li>
         <li>
           <Icon name="chart"/>

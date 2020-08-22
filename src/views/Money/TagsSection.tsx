@@ -34,7 +34,7 @@ const Wrapper = styled.section`
 `;
 
 const TagsSection: React.FC = () => {
-  const [tags, setTags] = useState<string[]>(['衣', '食', '住', '行']);
+  const [tags, setTags] = useState<string[]>(['吃饭', '打车']);
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const onAddTag = () => {
     const tagName = window.prompt('新标签名为');

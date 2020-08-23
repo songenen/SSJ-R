@@ -21,13 +21,13 @@ function App() {
     <AppWrapper>
     <Router>
           <Switch>
-            <Route exact path="/tags/:tag" >
-            <Tag/>
-          </Route>
+
             <Route exact path="/tags" >
               <Tags/>
             </Route>
-
+            <Route exact path="/tags/:tag" >
+              <Tag/>
+            </Route>
             <Route exact path="/money">
               <Money/>
             </Route>

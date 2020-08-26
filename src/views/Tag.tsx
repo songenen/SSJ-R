@@ -1,5 +1,5 @@
 import React from 'react';
-import {useTags} from 'useTags';
+import {useTags} from 'hooks/useTags';
 import {useParams, useHistory} from 'react-router-dom';
 import Layout from 'components/Layout';
 import Icon from 'components/Icon';
@@ -54,7 +54,7 @@ const Tag: React.FC = (props) => {
   return (
     <Layout>
       <Topbar>
-        <Icon name="left" className="ffff" onClick={onClickBack}/>
+        <Icon name="left"  onClick={onClickBack}/>
         <span>编辑标签</span>
         <Icon/>
       </Topbar>

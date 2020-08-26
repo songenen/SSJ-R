@@ -9,6 +9,6 @@ export const useUpdate = (fn: () => void, deps: any[]) => {
     if (count.current > 1) {
       fn();
     }
-  }, deps);
+  },deps);
 };
 

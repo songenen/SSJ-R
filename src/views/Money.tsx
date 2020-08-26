@@ -1,5 +1,5 @@
 import Layout from '../components/Layout';
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import {CategorySection} from './Money/CategorySection';
 import {NoteSection} from './Money/NoteSection';
@@ -31,7 +31,7 @@ function Money() {
     if(addRecord(selected)){
     alert('保存成功');
     setSelected(defaultFormData);
-  }}
+  }};
   return (
     <MyLayout>
       <TagsSection value={selected.tagIds}

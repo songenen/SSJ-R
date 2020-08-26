@@ -27,19 +27,12 @@ function Money() {
   const onChange = (obj: Partial<typeof selected>) => {
     setSelected({...selected, ...obj});
   };
-  console.log(2);
   const submit = () => {
-    debugger
-    console.log('1')
     addRecord(selected);
-    alert('保存成功');
     setSelected(defaultFormData);
   };
-  console.log(3);
   return (
     <MyLayout>
-      {JSON.stringify(selected)}
-      <hr/>
       <TagsSection value={selected.tagIds}
                    onChange={tagIds => onChange({tagIds})}/>
       <NoteSection value={selected.note}

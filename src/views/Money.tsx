@@ -28,9 +28,10 @@ function Money() {
     setSelected({...selected, ...obj});
   };
   const submit = () => {
-    addRecord(selected);
+    if(addRecord(selected)){
+    alert('保存成功');
     setSelected(defaultFormData);
-  };
+  }}
   return (
     <MyLayout>
       <TagsSection value={selected.tagIds}

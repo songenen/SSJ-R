@@ -6,7 +6,6 @@ font-size: 24px;
 
 > ul{
 display: flex;
-background: #c4c4c4;
 height: 72px;
 > li{
 width: 50%;

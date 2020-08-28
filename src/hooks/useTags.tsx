@@ -33,6 +33,7 @@ const useTags = () => {
   };
   const deleteTag = (id: number) => {
     setTags(tags.filter(tag => tag.id !== id));
+    window.history.back();
   };
   const addTag = () => {
     const tagName = window.prompt('新标签名为');

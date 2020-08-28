@@ -1,6 +1,7 @@
 {
   "name": "morney-r",
   "version": "0.1.0",
+  "homepage": "https://songenen.github.io/SSJ-R-Demo/",
   "private": true,
   "dependencies": {
     "@babel/core": "7.9.0",

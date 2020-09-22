@@ -16,7 +16,7 @@ position: relative;
 content: '';
 display: block;
 height: 3px;
-background: #333;
+background: #228df5;
 position: absolute;
 bottom: 0;
 width: 100%;

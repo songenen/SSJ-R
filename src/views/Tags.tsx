@@ -10,7 +10,7 @@ import {Space} from 'components/Space';
 
 const TagList = styled.ol`
   font-size: 16px;
-  background: #fff;
+  background:#b5d6f6;
   > li{
   border-bottom: 1px solid #d5d5d9;
   line-height: 20px;

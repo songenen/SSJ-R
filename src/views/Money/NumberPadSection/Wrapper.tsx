@@ -27,25 +27,25 @@ flex-direction: column;
             width: 50%;
             }
            &:nth-child(1){
-          background: #f2f2f2;
+          background: #b5d6f6;
           }
           &:nth-child(2),&:nth-child(5){
-          background: #e0e0e0;
+          background: #a0cffb;
           }
           &:nth-child(3),&:nth-child(6),&:nth-child(9){
-          background: #d3d3d3;
+          background: #74b8f9;
           } 
           &:nth-child(4),&:nth-child(7),&:nth-child(10){
-          background: #c1c1c1;
+          background: #55a7f6;
           }
            &:nth-child(8),&:nth-child(11),&:nth-child(13){
-          background: #b8b8b8;
+          background: #5aa9f5;
           } 
           &:nth-child(12){
-          background: #9a9a9a;
+          background: #228df5;
           }
           &:nth-child(14){
-          background: #a9a9a9;
+          background: #409ef9;
           }
         }
       }
